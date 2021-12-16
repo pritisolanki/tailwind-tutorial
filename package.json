@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tailwindcss -i src/main.css -o public/styles.css --watch",
+    "devlocal": "tailwindcss -i src/main.css -o public/styles.css --watch",
     "build-tw": " tailwindcss build -i  src/main.css -o public/styles.css"
   },
   "keywords": [],

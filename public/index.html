@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-rose-700 font-body">
+    <div class="grid md:grid-cols-3"><!-- contnet wrapper -->
+        <div>
+        <div class="md:col-span-1 md:flex md:justify-end">
+            <nav class="text-right">
+                <h1 class="font-bold uppercase p-4 text-6xl">
+                    <a href="/">Photography</a>
+                </h1>
+                <div class="flex justify-between items-center">
+                    <div class="px-4 cursor-pointer md:hidden" id="burger">
+                        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                          </svg>
+                    </div>
+                </div>
+
+        <ul class="text-sm mt-6 hidden md:block" id="menu">
+            <li class="text-indigo-800 font-bold py-1">
+                <a href="#" class="px-4 flex justify-end border-r-4 border-rose-700">
+                    <span>Home</span>
+                    <svg class="ml-2 w-5 inline-block" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                    </svg>
+                </a>
+            </li>
+            <li class="text-indigo-800 font-bold py-1">
+                <a href="#" class="px-4 flex justify-end border-r-4 border-white">
+                    <span>About</span>
+                    <svg  class="ml-2 w-5 inline-block" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </a>
+            </li>
+            <li class="text-indigo-800 font-bold py-1">
+                <a href="#" class="px-4 flex justify-end border-r-4 border-white">
+                    <span>Contact</span>
+                    <svg class="ml-2 w-5 inline-block" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    </div> <!-- parent to nav-->
+    </div>
+    <main class="px-16 py-6 bg-gray-100 md:col-span-2">
+        <header>
+            <h2 class="text-rose-700 text-2xl font-semibold mt-12">Today's Artist - Priti</h2>
+            <h3 class="text-2xl font-semibold">From Pixabay Gallery</h3> 
+        </header>
+        <div>
+            <h4 class="font-bold mt-12 pb-2 border-b border-rose-500"> Latest</h4>
+            <div class="mt-8 grid md:grid-cols-3 gap-10" id="latestDiv">
+                <div class="card">
+                    <img src="img/latest/sunflower1.jpg" alt="" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold"> Blooming Sunflower</span>
+                        <span class="block text-rose-600"> Dec 1, 2021</span>
+                    </div>
+                    <div class="badge">
+                        <span>10 Votes</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/latest/sunflower2.jpg" alt="" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold"> Sunny Sunflower</span>
+                        <span class="block text-rose-600"> Dec 1, 2021</span>
+                    </div>
+                    <div class="badge">
+                        <span>5 Votes</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/latest/zinnia.jpg" alt="" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold"> Zinnia</span>
+                        <span class="block text-rose-600"> Dec 1, 2021</span>
+                    </div>
+                    <div class="badge">
+                        <span>5 Votes</span>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="font-bold mt-12 border-b border-rose-500"> Most Popular</h4>
+            <div class="mt-8 grid md:grid-cols-3 gap-10">
+                <div class="card">
+                    <img src="img/popular/butterfly.jpg" alt="" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold"> Butterfly</span>
+                        <span class="block text-rose-600"> Dec 1, 2021</span>
+                    </div>
+                    <div class="badge">
+                        <span>150 Votes</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/popular/flower.jpg" alt="" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold"> Wildflower</span>
+                        <span class="block text-rose-600"> Dec 1, 2021</span>
+                    </div>
+                    <div class="badge">
+                        <span>125 Votes</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/popular/rose.jpg" alt="" class="w-full h-32 sm:h-48 object-cover">
+                    <div class="m-4">
+                        <span class="font-bold"> Rose</span>
+                        <span class="block text-rose-600"> Dec 1, 2021</span>
+                    </div>
+                    <div class="badge">
+                        <span>27 Votes</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center m-2">
+                <div class="bg-secondary-100 text-secondary-200">
+                    Load more
+                </div>
+            </div>
+        </div>
+    </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

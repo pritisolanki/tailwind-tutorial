@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+    @apply bg-white rounded overflow-hidden shadow-md relative animate-fadeIn;
+}
+
+.badge{
+    @apply bg-indigo-50 text-indigo-600 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2;
+}
